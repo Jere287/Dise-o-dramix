@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1240">
+<meta name="hz:slide-selector" content=".slide">
+<title>Folleto Dramix MallaEnBolsa</title>
+<link rel="stylesheet" href="https://use.typekit.net/gcy1sew.css">
+<style>
+  :root{
+    --azul:#2B498E; --marino:#203262; --noche:#0B1C45; --amarillo:#FCCE30; --gris:#BFC2C8;
+    --turquesa:#32D8D0; --rojo:#E45454; --blanco:#FFFFFF; --celeste:#E6ECF6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#d9dde4;font-family:"montserrat",sans-serif;color:var(--marino)}
+  .slide{position:relative;width:1240px;height:1754px;overflow:hidden;background:var(--blanco);margin:0 auto 40px}
+  .bebas{font-family:"bebas-neue-by-fontfabric",sans-serif;font-weight:400}
+
+  /* ---------- PORTADA ---------- */
+  .top{position:absolute;left:0;top:0;width:1240px;height:760px;background:var(--azul)}
+  .top-lines{position:absolute;left:0;top:0;width:1240px;height:760px}
+  .kicker{position:absolute;left:0;top:44px;width:1240px;text-align:center;color:var(--blanco);font-weight:700;font-size:26px;letter-spacing:1px}
+  .brand-small{position:absolute;left:0;top:118px;width:1240px;text-align:center;color:var(--amarillo);font-weight:700;font-size:28px;letter-spacing:6px}
+  .brand-big{position:absolute;left:0;top:156px;width:1240px;text-align:center;color:var(--blanco);font-weight:900;font-size:150px;line-height:170px;letter-spacing:-4px;white-space:nowrap}
+  .con-row{position:absolute;left:0;top:350px;width:1240px;height:110px;text-align:center}
+  .con{display:inline-block;vertical-align:middle;color:var(--blanco);font-weight:800;font-size:50px;margin-right:22px}
+  .pill{display:inline-block;vertical-align:middle;border:5px solid var(--blanco);border-radius:16px;padding:6px 30px 10px;color:var(--blanco);font-weight:600;font-size:54px;letter-spacing:-1px;white-space:nowrap}
+  .pill b{font-weight:900;color:var(--amarillo)}
+  .headline{position:absolute;left:0;top:490px;width:1240px;text-align:center;color:var(--blanco)}
+  .headline .h1{font-weight:900;font-size:100px;line-height:110px;letter-spacing:-3px;white-space:nowrap}
+  .headline .h1 span{font-weight:700;font-size:54px;letter-spacing:0;vertical-align:middle}
+  .headline .h1 em{font-style:normal;color:var(--amarillo)}
+  .sub{position:absolute;left:0;top:628px;width:1240px;text-align:center;color:var(--celeste);font-weight:500;font-size:26px;line-height:36px}
+
+  .mid{position:absolute;left:0;top:760px;width:1240px;height:820px;background:linear-gradient(180deg,#DCE5F3 0%,#F3F6FB 100%)}
+  .product{position:absolute;left:420px;top:790px;width:800px;height:470px}
+
+  .stack{position:absolute;left:44px;top:1150px;width:560px}
+  .band{height:118px;padding:0 20px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;font-style:italic;line-height:36px;white-space:nowrap}
+  .b1{background:var(--amarillo);color:var(--azul);font-size:28px}
+  .b2{background:var(--azul);color:var(--blanco);font-size:23px}
+  .b2 .big{font-size:52px}
+  .b3{background:var(--gris);color:var(--marino);font-size:28px}
+  .big{font-size:60px;font-style:normal;font-weight:900;margin:0 10px;letter-spacing:-2px}
+
+  .que{position:absolute;left:60px;top:820px;width:400px}
+  .que h3{font-weight:900;font-size:44px;color:var(--azul);letter-spacing:-1px;margin-bottom:12px}
+  .que p{font-size:22px;line-height:31px;font-weight:600;color:var(--marino)}
+  .que p b{font-weight:900;color:var(--azul)}
+  .uses-title{position:absolute;left:640px;top:1268px;width:560px;text-align:center;color:var(--azul);font-weight:800;font-style:italic;font-size:34px;line-height:40px}
+  .icons{position:absolute;left:630px;top:1330px;width:580px;display:flex;justify-content:space-between}
+  .ic{width:112px;text-align:center}
+  .ic svg{width:84px;height:84px;display:block;margin:0 auto 8px}
+  .ic p{font-size:12px;font-weight:800;letter-spacing:.5px;color:var(--marino);line-height:18px}
+  .tag-steel{position:absolute;left:640px;top:1498px;width:560px;height:56px;line-height:56px;text-align:center;font-weight:800;font-style:italic;color:var(--marino);background:var(--amarillo);font-size:26px}
+
+  .legal{position:absolute;left:0;top:1580px;width:1240px;height:174px;background:var(--blanco);border-top:8px solid var(--amarillo)}
+  .logo-tag{position:absolute;left:44px;top:1612px;width:250px;height:110px;border:3px dashed var(--gris);display:flex;align-items:center;justify-content:center;color:var(--gris);font-weight:800;font-size:22px;letter-spacing:2px}
+  .legal-text{position:absolute;left:330px;top:1606px;width:620px;font-size:14px;line-height:21px;color:#4a5570;font-weight:500}
+  .powerline{position:absolute;left:970px;top:1630px;width:230px;text-align:right;color:var(--azul);font-weight:900;font-size:30px;line-height:36px}
+
+  /* ---------- REVERSO ---------- */
+  .r-head{position:absolute;left:0;top:0;width:1240px;height:250px;background:var(--azul)}
+  .r-kicker{position:absolute;left:60px;top:52px;color:var(--amarillo);font-weight:700;font-size:26px;letter-spacing:5px}
+  .r-title{position:absolute;left:60px;top:96px;color:var(--blanco);font-weight:900;font-size:62px;line-height:70px;letter-spacing:-1px;white-space:nowrap}
+  .r-title em{font-style:normal;color:var(--amarillo)}
+
+  .sec-num{display:inline-block;width:58px;height:58px;border-radius:29px;background:var(--amarillo);color:var(--azul);font-weight:900;font-size:32px;line-height:58px;text-align:center;vertical-align:middle;margin-right:16px}
+  .sec-title{color:var(--azul);font-weight:900;font-size:38px;letter-spacing:-1px;vertical-align:middle}
+  .card{position:absolute;background:var(--blanco)}
+  .body{font-size:21px;line-height:31px;font-weight:500;color:var(--marino)}
+  .body b{font-weight:800;color:var(--azul)}
+
+  .s1{left:60px;top:300px;width:1120px}
+  .s1 .body{margin-top:20px;width:660px}
+  .spec{position:absolute;left:770px;top:300px;width:410px;height:330px;background:var(--marino);color:var(--blanco);padding:32px 34px}
+  .spec h4{font-size:22px;font-weight:800;letter-spacing:3px;color:var(--amarillo);margin-bottom:14px}
+  .spec .row{display:flex;justify-content:space-between;border-bottom:2px solid rgba(255,255,255,.18);padding:11px 0;font-size:19px;font-weight:600}
+  .spec .row b{font-weight:900;color:var(--blanco)}
+
+  .s2{left:60px;top:690px;width:1120px}
+  .apps{position:absolute;left:60px;top:770px;width:1120px;display:flex;justify-content:space-between}
+  .app{width:206px;height:220px;background:var(--celeste);border-top:8px solid var(--azul);padding:20px 14px;text-align:center}
+  .app svg{width:76px;height:76px;display:block;margin:0 auto 12px}
+  .app h5{font-size:17px;font-weight:900;color:var(--azul);line-height:24px;margin-bottom:6px}
+  .app p{font-size:14px;font-weight:600;line-height:19px;color:var(--marino)}
+
+  .s3{left:60px;top:1040px;width:540px}
+  .steps{position:absolute;left:60px;top:1120px;width:540px}
+  .step{display:flex;align-items:flex-start;margin-bottom:22px}
+  .step .n{flex:0 0 auto;width:76px;height:76px;background:var(--azul);color:var(--amarillo);font-weight:900;font-size:44px;line-height:76px;text-align:center;margin-right:20px}
+  .step p{font-size:20px;line-height:28px;font-weight:600;padding-top:6px}
+  .step p b{font-weight:900;color:var(--azul)}
+  .note{position:absolute;left:60px;top:1460px;width:540px;background:var(--amarillo);padding:18px 22px;font-size:17px;line-height:25px;font-weight:600;color:var(--marino)}
+  .note b{font-weight:900}
+
+  .s4{left:650px;top:1040px;width:530px}
+  .compare{position:absolute;left:650px;top:1120px;width:530px;display:flex;justify-content:space-between}
+  .col{width:258px;padding:18px 16px;height:200px}
+  .col.ok{background:var(--azul);color:var(--blanco)}
+  .col.no{background:var(--blanco);border:4px solid var(--rojo);color:var(--marino)}
+  .col h5{font-size:18px;font-weight:900;line-height:25px;margin-bottom:10px}
+  .col.ok h5{color:var(--amarillo)}
+  .col.no h5{color:var(--rojo)}
+  .col li{list-style:none;font-size:16px;line-height:24px;font-weight:600}
+  .conf{position:absolute;left:650px;top:1340px;width:530px}
+  .conf .it{border-left:6px solid var(--gris);padding:4px 0 4px 14px;margin-bottom:12px;font-size:16px;line-height:23px;font-weight:500}
+  .conf .it b{font-weight:900;color:var(--azul)}
+
+  .r-foot{position:absolute;left:0;top:1640px;width:1240px;height:114px;background:var(--azul)}
+  .rf-logo{left:60px;top:1656px;height:82px;width:220px;background:var(--blanco);border:none;color:var(--gris)}
+  .r-foot-text{position:absolute;left:310px;top:1662px;width:630px;color:var(--celeste);font-size:14px;line-height:21px;font-weight:500}
+  .rf-power{left:960px;top:1666px;color:var(--amarillo)}
+</style>
+</head>
+<body>
+
+<!-- ======================= CARA 1 · PORTADA ======================= -->
+<div class="slide" data-canvas-width="1240" data-canvas-height="1754">
+  <div class="top"></div>
+  <svg class="top-lines" viewBox="0 0 1240 760" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="#5C7BC0" stroke-width="2" opacity="0.45">
+      <path d="M0 690 C 200 640, 380 720, 620 670 S 1040 620, 1240 680"/>
+      <path d="M0 720 C 220 680, 400 750, 640 705 S 1060 660, 1240 715"/>
+      <path d="M0 745 C 240 715, 420 770, 660 735 S 1080 700, 1240 742"/>
+      <path d="M40 0 L40 120 M40 160 L40 300"/>
+      <path d="M1200 0 L1200 140 M1200 180 L1200 320"/>
+    </g>
+    <g fill="#5C7BC0" opacity="0.45">
+      <circle cx="40" cy="140" r="7"/><circle cx="1200" cy="160" r="7"/>
+    </g>
+  </svg>
+
+  <div class="kicker">Nueva solución de refuerzo para concreto · Fibras de acero</div>
+  <div class="brand-small">BEKAERT</div>
+  <div class="brand-big">DRAMIX<span style="font-size:70px;vertical-align:top;line-height:110px">®</span></div>
+  <div class="con-row"><span class="con">Con</span><span class="pill">Malla<b>En</b>Bolsa</span></div>
+  <div class="headline"><div class="h1">REFUERZA <span>sin</span> <em>MALLA</em></div></div>
+  <div class="sub">Fibras de acero que refuerzan el concreto en 3 dimensiones<br>y reemplazan la malla electrosoldada en cargas livianas.</div>
+
+  <div class="mid"></div>
+
+  <!-- Ilustración del producto: bolsa + fibras -->
+  <svg class="product" viewBox="0 0 800 470" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="420" cy="440" rx="330" ry="26" fill="#203262" opacity="0.18"/>
+    <!-- bolsa -->
+    <path d="M300 70 L540 70 L570 430 L270 430 Z" fill="#2B498E"/>
+    <path d="M300 70 L540 70 L548 110 L292 110 Z" fill="#203262"/>
+    <rect x="300" y="80" width="240" height="12" fill="#FCCE30"/>
+    <rect x="292" y="150" width="256" height="150" fill="#FFFFFF"/>
+    <text x="420" y="205" text-anchor="middle" font-family="montserrat,sans-serif" font-weight="900" font-size="46" fill="#2B498E">DRAMIX®</text>
+    <text x="420" y="245" text-anchor="middle" font-family="montserrat,sans-serif" font-weight="700" font-size="26" fill="#203262">MallaEnBolsa</text>
+    <text x="420" y="282" text-anchor="middle" font-family="montserrat,sans-serif" font-weight="600" font-size="18" fill="#4a5570">Fibras de acero</text>
+    <rect x="345" y="330" width="150" height="66" rx="8" fill="#FCCE30"/>
+    <text x="420" y="377" text-anchor="middle" font-family="montserrat,sans-serif" font-weight="900" font-size="42" fill="#2B498E">10 kg</text>
+    <!-- fibras con ganchos -->
+    <g fill="none" stroke="#6E7685" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 300 l14 -10 l120 -40 l14 4"/>
+      <path d="M120 210 l16 -6 l90 70 l4 16"/>
+      <path d="M600 330 l14 -10 l120 -20 l12 6"/>
+      <path d="M620 410 l10 -14 l130 -6 l10 10"/>
+      <path d="M640 220 l16 -4 l80 80 l2 16"/>
+    </g>
+    <g fill="none" stroke="#BFC2C8" stroke-width="3" stroke-linecap="round">
+      <path d="M58 291 l112 -37"/><path d="M640 323 l110 -18"/>
+    </g>
+  </svg>
+
+  <div class="que"><h3>¿Qué es?</h3><p><b>Fibras de acero</b> de 50 mm con ganchos en las puntas. Se mezclan con el concreto y lo refuerzan <b>sin cortes, traslapos ni amarres.</b></p></div>
+
+  <div class="stack">
+    <div class="band b1">1 bolsa de 10 kg<span class="big">=</span>2 mallas</div>
+    <div class="band b2">Rinde para<span class="big">12–14</span>sacos de cemento</div>
+    <div class="band b3">Hasta<span class="big">15%</span>de ahorro*</div>
+  </div>
+
+  <div class="uses-title">¿Dónde se aplica?</div>
+  <div class="icons">
+    <div class="ic">
+      <svg viewBox="0 0 84 84" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><circle cx="42" cy="42" r="38"/><path d="M18 50 L42 34 L66 50 L42 62 Z"/><path d="M24 46 v8 l18 10 l18-10 v-8"/></svg>
+      <p>CONTRAPISOS</p>
+    </div>
+    <div class="ic">
+      <svg viewBox="0 0 84 84" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><circle cx="42" cy="42" r="38"/><path d="M30 66 L38 18 M54 66 L46 18"/><path d="M42 24 v6 M42 38 v6 M42 52 v8"/></svg>
+      <p>PAVIMENTOS</p>
+    </div>
+    <div class="ic">
+      <svg viewBox="0 0 84 84" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><circle cx="42" cy="42" r="38"/><rect x="24" y="20" width="12" height="44" rx="2"/><rect x="48" y="20" width="12" height="44" rx="2"/></svg>
+      <p>PLACA HUELLA</p>
+    </div>
+    <div class="ic">
+      <svg viewBox="0 0 84 84" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><circle cx="42" cy="42" r="38"/><path d="M16 50 h52"/><path d="M20 50 v-12 h44 v12"/><path d="M28 50 v8 M42 50 v8 M56 50 v8"/></svg>
+      <p>PLACA FÁCIL</p>
+    </div>
+    <div class="ic">
+      <svg viewBox="0 0 84 84" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><circle cx="42" cy="42" r="38"/><path d="M16 46 l8 -8 l8 8 l8 -8 l8 8 l8 -8 l8 8 l4 -4"/><path d="M16 34 h52"/></svg>
+      <p>LOSA<br>COLABORANTE</p>
+    </div>
+  </div>
+  <div class="tag-steel">Acero real, no fibra plástica</div>
+
+  <div class="legal"></div>
+  <div class="logo-tag">TU LOGO</div>
+  <div class="legal-text">*Datos declarados por el fabricante (Bekaert). Uso en contrapisos y losas de cargas livianas (menos de 500 kg/m²). La dosificación puede variar según la versión del producto: confírmala con tu proveedor antes de usarlo. No sustituye el diseño estructural de un profesional. Dramix® es una marca registrada de NV Bekaert SA.</div>
+  <div class="powerline">Hacemos<br>futuro.</div>
+</div>
+
+<!-- ======================= CARA 2 · REVERSO ======================= -->
+<div class="slide" data-canvas-width="1240" data-canvas-height="1754">
+  <div class="r-head"></div>
+  <div class="r-kicker">DRAMIX® MALLAENBOLSA</div>
+  <div class="r-title">Todo lo que debes saber<br>para <em>reforzar mejor</em></div>
+
+  <!-- 1. Qué es -->
+  <div class="card s1">
+    <div><span class="sec-num">1</span><span class="sec-title">¿Qué es?</span></div>
+    <p class="body">Son <b>fibras de acero</b> que se mezclan con el concreto y lo refuerzan en <b>tres dimensiones</b>. El refuerzo queda repartido en todo el espesor de la placa y <b>reemplaza la malla electrosoldada o la varilla</b> en placas de cargas livianas.<br><br>Las fabrica <b>Bekaert</b> (Bélgica) con acero de bajo contenido de carbono.</p>
+  </div>
+  <div class="spec">
+    <h4>FICHA RÁPIDA</h4>
+    <div class="row"><span>Material</span><b>Acero</b></div>
+    <div class="row"><span>Diámetro</span><b>1,05 mm</b></div>
+    <div class="row"><span>Largo</span><b>50 mm</b></div>
+    <div class="row"><span>Presentación</span><b>Bolsa 10 kg</b></div>
+    <div class="row" style="border:none"><span>Carga máx. de uso</span><b>&lt; 500 kg/m²</b></div>
+  </div>
+
+  <!-- 2. Dónde se aplica -->
+  <div class="card s2"><span class="sec-num">2</span><span class="sec-title">¿Para qué sirve y dónde se aplica?</span></div>
+  <div class="apps">
+    <div class="app">
+      <svg viewBox="0 0 76 76" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M8 42 L38 24 L68 42 L38 58 Z"/><path d="M14 40 v10 l24 14 l24 -14 v-10"/></svg>
+      <h5>Contrapisos</h5><p>Pisos de vivienda con cargas livianas</p>
+    </div>
+    <div class="app">
+      <svg viewBox="0 0 76 76" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M22 70 L32 8 M54 70 L44 8"/><path d="M38 14 v8 M38 32 v8 M38 50 v10"/></svg>
+      <h5>Pavimentos</h5><p>Patios, accesos y parqueaderos</p>
+    </div>
+    <div class="app">
+      <svg viewBox="0 0 76 76" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><rect x="16" y="8" width="14" height="60" rx="2"/><rect x="46" y="8" width="14" height="60" rx="2"/></svg>
+      <h5>Placa huella</h5><p>Vías rurales y caminos de acceso</p>
+    </div>
+    <div class="app">
+      <svg viewBox="0 0 76 76" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M6 44 h64"/><path d="M10 44 v-14 h56 v14"/><path d="M20 44 v14 M38 44 v14 M56 44 v14"/></svg>
+      <h5>Placa fácil</h5><p>Entrepisos con sistema de placa fácil</p>
+    </div>
+    <div class="app">
+      <svg viewBox="0 0 76 76" fill="none" stroke="#2B498E" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M6 46 l9 -10 l9 10 l9 -10 l9 10 l9 -10 l9 10 l6 -6"/><path d="M6 30 h64"/></svg>
+      <h5>Losa colaborante</h5><p>Losas sobre lámina de acero (steel deck)</p>
+    </div>
+  </div>
+
+  <!-- 3. Cómo se aplica -->
+  <div class="card s3"><span class="sec-num">3</span><span class="sec-title">Cómo se aplica</span></div>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><p><b>Mezcla:</b> agrega las fibras junto con los agregados y mezcla hasta que queden uniformes.</p></div>
+    <div class="step"><div class="n">2</div><p><b>Coloca:</b> vierte el concreto en el lugar donde va la placa.</p></div>
+    <div class="step"><div class="n">3</div><p><b>Afina:</b> da el terminado tradicional. No hay cortes, traslapos ni amarres.</p></div>
+  </div>
+  <div class="note"><b>Dosificación:</b> 1 bolsa de 10 kg refuerza de 12 a 14 sacos de cemento. Confirma la dosis con tu proveedor, porque las versiones anteriores del producto usaban otra cifra.</div>
+
+  <!-- 4. Con qué se confunde -->
+  <div class="card s4"><span class="sec-num">4</span><span class="sec-title">¡No la confundas!</span></div>
+  <div class="compare">
+    <div class="col ok">
+      <h5>SÍ · DRAMIX® (acero)</h5>
+      <ul><li>Gris metálico</li><li>Rígida</li><li>Ganchos en las puntas</li><li>Un imán la atrae</li></ul>
+    </div>
+    <div class="col no">
+      <h5>NO · Fibra sintética</h5>
+      <ul><li>Blanca</li><li>Flexible</li><li>Polipropileno o polietileno</li><li>No la atrae un imán</li></ul>
+    </div>
+  </div>
+  <div class="conf">
+    <div class="it"><b>"Malla en bolsa" sintética:</b> tiene casi el mismo nombre, pero no es de acero.</div>
+    <div class="it"><b>Microfibra (19 mm):</b> solo controla las fisuras de retracción. No es refuerzo estructural.</div>
+    <div class="it"><b>Fibra de vidrio:</b> se usa en morteros y prefabricados delgados. No reemplaza la malla.</div>
+    <div class="it"><b>Otras Dramix® (3D, 4D, 5D):</b> son otros productos para pisos industriales y usos estructurales.</div>
+  </div>
+
+  <div class="r-foot"></div>
+  <div class="logo-tag rf-logo">TU LOGO</div>
+  <div class="r-foot-text">Información referencial basada en datos del fabricante (Bekaert / Proalco). Úsala solo en placas de cargas livianas (menos de 500 kg/m²). Para cargas mayores o elementos estructurales, consulta a un ingeniero.</div>
+  <div class="powerline rf-power">Hacemos<br>futuro.</div>
+</div>
+
+</body>
+</html>
